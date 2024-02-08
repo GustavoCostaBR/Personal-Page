@@ -444,6 +444,10 @@ body {
 
 	}
 
+	.PRINCIPAL__SOBRE {
+		padding: 1% 0%;
+	}
+
 	.PRINCIPAL__CONTEUDO{
 		width: 91%;
 		/* width: auto; */
