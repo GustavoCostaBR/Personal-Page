@@ -201,11 +201,11 @@ body {
 
 .PRINCIPAL__RESUME__section1 {
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 	font-family: var(--fonte-textos);
 	font-size: 1.25rem;
-	gap: 0rem;
+	/* gap: 0rem; */
 
 }
 
@@ -213,9 +213,9 @@ body {
 	width: 20%;
 	/* height: 80vh; */
 	/* padding: 10vw; */
-	position: relative;
-	margin: 0 auto;
-	display: block;
+	/* position: relative; */
+	/* margin: 0 auto; */
+	/* display: block; */
 
 }
 
@@ -390,6 +390,10 @@ body {
 
 	.PRINCIPAL__RESUME__section1 {
 		flex-direction: column-reverse;
+	}
+
+	.PRINCIPAL__RESUME__section1__image {
+		width: 50%;
 	}
 
 }
