@@ -114,6 +114,15 @@ body {
 	/* flex-wrap: wrap; */
 }
 
+.PRINCIPAL__SOBRE {
+	padding: 1% 10%;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	gap: 2%;
+	justify-content: space-around;
+}
+
 .PRINCIPAL__CONTEUDO {
 	width: 50%;
 	height: 100%;
@@ -219,6 +228,10 @@ body {
 
 }
 
+.PRINCIPAL__ABOUT__IMAGE {
+	width: 30%;
+}
+
 
 .PRINCIPAL__RESUME__section1__div {
 	display: flex;
@@ -317,7 +330,7 @@ body {
 	justify-content: space-between;
 	flex-wrap: wrap;
 	align-items: center;
-	gap: 0px;
+	gap: 2rem;
 
 	li {
 		list-style-position: inside;
@@ -334,17 +347,17 @@ body {
 	/* margin-top: 40px; */
 	display: flex;
 	flex-direction: column;
-	gap: 5px;
+	gap: 0.5rem;
 	font-size: 1.25rem;
 	font-weight: bold;
 	font-family: var(--fonte-textos);
-	width: 25vw;
+	width: 30%;
 
 	li {
 		padding-top: 0px;
 		font-size: 1rem;
 		font-weight: lighter;
-		width: 25vw;
+		/* width: 25vw; */
 		font-family: var(--fonte-textos);
 	}
 }
@@ -387,6 +400,9 @@ body {
 	.PRINCIPAL {
 		flex-direction: column-reverse;
 	}
+	.PRINCIPAL__SOBRE {
+		flex-direction: column-reverse;
+	}
 
 	.PRINCIPAL__RESUME__section1 {
 		flex-direction: column-reverse;
@@ -396,12 +412,28 @@ body {
 		width: 50%;
 	}
 
+	.PRINCIPAL__ABOUT__IMAGE {
+		width: 50%;
+	}
+
 }
 
 @media (max-width: 900px) {
 	.PRINCIPAL {
 		height: 100%;
 	}
+
+	.PRINCIPAL__RESUME{
+		padding: 1% 2%;
+	}
+}
+
+
+@media (max-width: 750px) {
+	.lista__habilidades__habilidade{
+		width: 45%;
+	}
+
 }
 
 
@@ -417,6 +449,10 @@ body {
 		/* width: auto; */
 	}
 
+	.PRINCIPAL__CONTEUDO__SOBRE {
+		width: 91%;
+	}
+
 	.PRINCIPAL__RESUME__section1__div {
 		flex-wrap: wrap;
 		h1{
@@ -430,4 +466,16 @@ body {
 		text-align: center;
 		gap: 10%;
 	}
+
+	.cabecalho__menu{
+		flex-wrap: wrap;
+		gap: 3rem;
+	}
+}
+
+@media (max-width: 500px) {
+	.lista__habilidades__habilidade{
+		width: 100%;
+	}
+
 }
