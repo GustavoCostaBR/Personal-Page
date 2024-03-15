@@ -296,6 +296,7 @@ body {
 	}
 
 	div {
+
 		/* display: flex; */
 		/* flex-direction: column;
 		justify-content: center; */
@@ -304,6 +305,7 @@ body {
 			font-weight: bold;
 			font-family: var(--fonte-textos);
 		}
+
 		div {
 			/* padding: 15px; */
 			display: flex;
@@ -340,7 +342,36 @@ body {
 		font-weight: lighter;
 		width: 100%;
 		font-family: var(--fonte-textos);
+
+		/* a {
+			font-size: 1rem;
+			font-weight: lighter;
+			width: 100%;
+			font-family: var(--fonte-textos);
+			text-decoration: none;
+			color: var(--cor-quintenaria);
+			transition: transform 0.3s ease;
+		}
+		a:hover {
+			transform: scale(1.5); */
+		/* } */
 	}
+}
+
+.Link__Plain__Text {
+	font-size: 1rem;
+	transform-origin: left center;
+	display: inline-block;
+			font-weight: lighter;
+			width: 100%;
+			font-family: var(--fonte-textos);
+			text-decoration: none;
+			color: var(--cor-quintenaria);
+			transition: transform 0.3s ease;
+}
+
+.Link__Plain__Text:hover {
+	transform: scale(1.2);
 }
 
 .lista__habilidades__habilidade {
@@ -369,7 +400,7 @@ body {
 	width: 50%;
 }
 
-.curso{
+.curso {
 	padding: 20px;
 	/* gap: 100px; */
 }
@@ -400,6 +431,7 @@ body {
 	.PRINCIPAL {
 		flex-direction: column-reverse;
 	}
+
 	.PRINCIPAL__SOBRE {
 		flex-direction: column-reverse;
 	}
@@ -423,15 +455,22 @@ body {
 		height: 100%;
 	}
 
-	.PRINCIPAL__RESUME{
+	.PRINCIPAL__RESUME {
 		padding: 1% 2%;
 	}
 }
 
 
-@media (max-width: 750px) {
-	.lista__habilidades__habilidade{
+@media (max-width: 765px) {
+	.lista__habilidades__habilidade {
 		width: 45%;
+	}
+
+	.PRINCIPAL__RESUME__section1__div__lista__horizontal {
+		flex-wrap: wrap;
+		justify-content: space-around;
+		text-align: center;
+		gap: 10%;
 	}
 
 }
@@ -448,7 +487,7 @@ body {
 		padding: 1% 0%;
 	}
 
-	.PRINCIPAL__CONTEUDO{
+	.PRINCIPAL__CONTEUDO {
 		width: 91%;
 		/* width: auto; */
 	}
@@ -459,26 +498,20 @@ body {
 
 	.PRINCIPAL__RESUME__section1__div {
 		flex-wrap: wrap;
-		h1{
+
+		h1 {
 			text-align: center;
 		}
 	}
 
-	.PRINCIPAL__RESUME__section1__div__lista__horizontal {
-		flex-wrap: wrap;
-		justify-content: space-around;
-		text-align: center;
-		gap: 10%;
-	}
-
-	.cabecalho__menu{
+	.cabecalho__menu {
 		flex-wrap: wrap;
 		gap: 3rem;
 	}
 }
 
 @media (max-width: 500px) {
-	.lista__habilidades__habilidade{
+	.lista__habilidades__habilidade {
 		width: 100%;
 	}
 
